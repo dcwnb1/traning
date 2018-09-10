@@ -1,0 +1,116 @@
+七月 04, 2018 9:50:06 上午 hudson.remoting.jnlp.Main createEngine
+信息: Setting up slave: window_demo
+七月 04, 2018 9:50:06 上午 hudson.remoting.jnlp.Main$CuiListener <init>
+信息: Jenkins agent is running in headless mode.
+七月 04, 2018 9:50:06 上午 org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+信息: Using D:\pythonwok\selenium\8-chapter\test_project\remoting as a remoting work directory
+七月 04, 2018 9:50:07 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Locating server among [http://10.12.1.36:7800/]
+七月 04, 2018 9:50:08 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+七月 04, 2018 9:50:08 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Agent discovery successful
+  Agent address: 10.12.1.36
+  Agent port:    34599
+  Identity:      df:3d:7a:41:de:1b:99:1a:aa:4e:31:ca:8c:8a:cd:8a
+七月 04, 2018 9:50:08 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Handshaking
+七月 04, 2018 9:50:08 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connecting to 10.12.1.36:34599
+七月 04, 2018 9:50:08 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Trying protocol: JNLP4-connect
+七月 04, 2018 9:50:08 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Remote identity confirmed: df:3d:7a:41:de:1b:99:1a:aa:4e:31:ca:8c:8a:cd:8a
+七月 04, 2018 9:50:08 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connected
+七月 04, 2018 9:54:01 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Terminated
+七月 04, 2018 9:54:01 上午 hudson.remoting.Request$2 run
+警告: Failed to send back a reply to the request hudson.remoting.Request$2@1761063b
+hudson.remoting.ChannelClosedException: channel is already closed
+	at hudson.remoting.Channel.send(Channel.java:671)
+	at hudson.remoting.Request$2.run(Request.java:370)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1$1.run(Engine.java:98)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer.access$1800(BIONetworkLayer.java:48)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader.run(BIONetworkLayer.java:264)
+	... 4 more
+
+七月 04, 2018 9:54:16 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+信息: Failed to connect to the master. Will try again: java.net.SocketTimeoutException connect timed out
+七月 04, 2018 9:54:31 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+信息: Failed to connect to the master. Will try again: java.net.SocketTimeoutException connect timed out
+七月 04, 2018 9:54:46 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+信息: Failed to connect to the master. Will try again: java.net.SocketTimeoutException connect timed out
+七月 04, 2018 9:54:56 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Locating server among [http://10.12.1.36:7800/]
+七月 04, 2018 9:54:56 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+七月 04, 2018 9:54:56 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Agent discovery successful
+  Agent address: 10.12.1.36
+  Agent port:    34599
+  Identity:      df:3d:7a:41:de:1b:99:1a:aa:4e:31:ca:8c:8a:cd:8a
+七月 04, 2018 9:54:56 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Handshaking
+七月 04, 2018 9:54:56 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connecting to 10.12.1.36:34599
+七月 04, 2018 9:54:56 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Trying protocol: JNLP4-connect
+七月 04, 2018 9:54:56 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Remote identity confirmed: df:3d:7a:41:de:1b:99:1a:aa:4e:31:ca:8c:8a:cd:8a
+七月 04, 2018 9:54:57 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connected
+七月 04, 2018 10:09:17 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Terminated
+七月 04, 2018 10:09:27 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Locating server among [http://10.12.1.36:7800/]
+七月 04, 2018 10:09:27 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+七月 04, 2018 10:09:27 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Agent discovery successful
+  Agent address: 10.12.1.36
+  Agent port:    34599
+  Identity:      df:3d:7a:41:de:1b:99:1a:aa:4e:31:ca:8c:8a:cd:8a
+七月 04, 2018 10:09:27 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Handshaking
+七月 04, 2018 10:09:27 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connecting to 10.12.1.36:34599
+七月 04, 2018 10:09:27 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Trying protocol: JNLP4-connect
+七月 04, 2018 10:09:28 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Remote identity confirmed: df:3d:7a:41:de:1b:99:1a:aa:4e:31:ca:8c:8a:cd:8a
+七月 04, 2018 10:09:28 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connected
+七月 04, 2018 10:23:52 上午 org.jvnet.winp.Native loadByUrl
+警告: Failed to load DLL from static location
+java.lang.UnsatisfiedLinkError: Native Library D:\pythonwok\selenium\8-chapter\test_project\remoting\jarCache\8D\winp.x64.59DDBA6E777434D039AE09539E6AE899.dll already loaded in another classloader
+	at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at org.jvnet.winp.Native.loadDll(Native.java:199)
+	at org.jvnet.winp.Native.loadByUrl(Native.java:130)
+	at org.jvnet.winp.Native.load(Native.java:99)
+	at org.jvnet.winp.Native.<clinit>(Native.java:70)
+	at org.jvnet.winp.WinProcess.enableDebugPrivilege(WinProcess.java:226)
+	at hudson.util.ProcessTree$Windows.<clinit>(ProcessTree.java:555)
+	at hudson.util.ProcessTree.get(ProcessTree.java:350)
+	at hudson.Launcher$RemoteLauncher$KillTask.call(Launcher.java:1091)
+	at hudson.Launcher$RemoteLauncher$KillTask.call(Launcher.java:1082)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:207)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:53)
+	at hudson.remoting.Request$2.run(Request.java:358)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1$1.run(Engine.java:98)
+	at java.lang.Thread.run(Unknown Source)
+
