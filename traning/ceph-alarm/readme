@@ -1,0 +1,14 @@
+对小程序的说明：
+1、原始需求
+zabbix监控ceph的健康状态，可是zabbix服务端所在主机不能访问外网，因此在一个可以访问公网的主机编写了python程序，由于发送邮件
+2、结构组成
+logs    存放监控日志
+plugin  存储zabbix的监控脚本：ceph-health.py
+ceph_check_daemon.py    daemon文件，用于执行的主文件
+check_log.py            监控日志格式文件
+email_check.py          监控的主逻辑文件，发送邮件
+public.py               公共函数文件
+
+3、流程
+用脚本监控ceph状态，zabbix客户端进行采集到mysql数据库，叫采集数据放入ceph_alarm_his（保存历史数据），ceph_alarm（只保留当前最新数据），history_uint
+（原始数据），程序每五分钟会读history_uint表当数据为0则是ceph异常，记录到ceph_alarm，发送邮件，历史数据放入ceph_alarm_his。
